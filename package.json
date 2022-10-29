@@ -1,0 +1,23 @@
+{
+  "name": "bookshelf",
+  "version": "1.0.0",
+  "description": "This app will keep track of your books.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greensharpie/BookShelf.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/greensharpie/BookShelf/issues"
+  },
+  "homepage": "https://github.com/greensharpie/BookShelf#readme",
+  "dependencies": {
+    "mongoose": "^6.7.0"
+  }
+}
