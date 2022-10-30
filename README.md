@@ -31,13 +31,11 @@
 
 ### **_Component Hierarchy Diagram_**
 
-![Component Hierachy Diagram](Charts/McBroken-Component-Hierarchy2.drawio.png)
+![Component Heirachy Diagram](client/diagrams/CHD.png)
 
 ### **_Entity Relationship Diagram_**
 
-![EntityRelationshipDiagram](Charts/McBroken.ERD.drawio.png)
-
----
+## ![Entity Relationship Diagram](client/diagrams/ERD.png)
 
 ### **_Task Lists_**
 
@@ -58,8 +56,7 @@
 
 ---
 
-<!-- ### **_Credits_**
+### **_Future Updates_**
 
--
--
-- -->
+- User Authentication
+- Mobile Friendly
