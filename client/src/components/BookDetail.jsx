@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import { BASE_URL } from '../globals' 
 
+// get and put .then was learned from `https://circleci.com/blog/making-http-requests-with-axios/`
 
 const BookDetail = () => {
 
@@ -11,7 +12,6 @@ const BookDetail = () => {
   const [checked, setChecked] = useState(false)
 
   const id = useParams().id
-  // const [bookDetail, setBookDetails] = useState()
 
   useEffect(() => {
 
@@ -20,7 +20,6 @@ const BookDetail = () => {
         await axios.get(`${BASE_URL}/books/${id}`)
         .then((res) => res.data)
         .then((data) => setInputs(data.book))
-        // console.log('detail res', res)
       }catch (error) {
         console.log(error)
       }
@@ -28,18 +27,34 @@ const BookDetail = () => {
     getBookId()
   }, [id])
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
+  const updateBook = async () => {
+    try {
+      await axios.put(`${BASE_URL}/books/${id}`, {
+        name: String(input.name),
+        author: String(input.author),
+        description: String(input.description),
+        rating: Number(input.rating),
+        image: String(input.image),
+        available: Boolean(checked)
+      }).then(res => res.data)
+    }catch (error) {
+      console.log(error)
+    }
   }
+
+
 
   const handleChange = (e) => {
     setInputs((prevState) => ({
       ...prevState,
       [e.target.id]: e.target.value
     }))
-    console.log('test three', e)
   }
-  console.log('inputs', input)
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    updateBook()
+  }
 
 
   return (

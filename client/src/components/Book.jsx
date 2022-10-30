@@ -1,5 +1,7 @@
 // import React from 'react'
+import axios from 'axios'
 import { Link } from 'react-router-dom' 
+import { BASE_URL } from '../globals'
 
 const Book = (props) => {
   const {_id, name, author, description, rating, image} = props.book
@@ -12,7 +14,7 @@ const Book = (props) => {
       <p>{description}</p>
       <h2>{rating}</h2>
       <Link to = {`/books/${_id}`}><button>Update</button></Link>
-      <button>Delete</button>
+      <button onClick={deleteBook}>Delete</button>
     </div>
   )
 }
