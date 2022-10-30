@@ -52,7 +52,7 @@ const AddBook = () => {
         <label htmlFor='name'>Name: </label>
         <input 
         id = 'name'
-        type = 'text'
+        type = 'text' className='nameInput'
         value = {input.name}
         onChange= {handleChange}
         />
@@ -60,7 +60,7 @@ const AddBook = () => {
         <label htmlFor='author'>Author: </label>
         <input 
         id= 'author'
-        type= 'text'
+        type= 'text' className='authorInput'
         value = {input.author}
         onChange= {handleChange}
         />
@@ -68,7 +68,7 @@ const AddBook = () => {
         <label htmlFor='description'>Description: </label>
         <input 
         id= 'description'
-        type= 'text'
+        type= 'text'className='descriptionInput'
         value = {input.description}
         onChange= {handleChange}
         />
@@ -76,7 +76,7 @@ const AddBook = () => {
         <label htmlFor='rating'>Rating: </label>
         <input 
         id= 'rating'
-        type= 'number'
+        type= 'number' className='ratingInput'
         value = {input.rating}
         onChange= {handleChange}
         />
@@ -84,7 +84,7 @@ const AddBook = () => {
         <label htmlFor='available'>Available: </label>
         <input 
         id= 'available'
-        type= 'checkbox'
+        type= 'checkbox' className='availableInput'
         control = {input.checked}
         value = {input.available}
         onChange= {() => setChecked(!checked)}
@@ -93,13 +93,15 @@ const AddBook = () => {
         <label htmlFor='image'>Image: </label>
         <input 
         id= 'image'
-        type= 'text'
+        type= 'text' className='imageInput'
         value = {input.image}
         onChange= {handleChange}
         />
         <br></br>
+        <div className='addBookDiv'>
         <button type='submit'>Add Book</button>
         <br></br>
+        </div>
       </form>
     </div>
   )
