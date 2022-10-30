@@ -2,6 +2,7 @@ import React from 'react'
 import { BASE_URL } from '../globals'
 import axios from 'axios'
 import { useState, useEffect } from 'react'  
+import Book from '../components/Book'
 // import { useParams } from 'react-router-dom'
 
 
@@ -16,7 +17,7 @@ const Books = () => {
     const showBook = async () => {
       try{
         const res = await axios.get(`${BASE_URL}/books`)
-        setBooks(res.data)
+        setBooks(res.data.books)
       }catch(error){
         console.log(error)
       }
@@ -27,7 +28,13 @@ const Books = () => {
 
 
   return (
-    <div>All Books</div>
+    <><div>All Books</div><ul>
+      {book && book.map((book, i) => (
+        <div key={i}>
+          <Book book={book} />
+        </div>
+      ))}
+    </ul></>
   )
 }
 
