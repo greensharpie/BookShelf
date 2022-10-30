@@ -4,9 +4,12 @@ const Header = () => {
   return (
     <div className="header">
       <nav className="headerLinks">
-      <Link to = {'/about'}>About Bookshelf</Link>
-        <Link to = {'/add'}>Add Book </Link>
-        <Link to = {'/books'}>Books</Link>
+        <ul>
+        <li> <Link to = {'/'}>Home</Link> </li>
+        <li> <Link to = {'/add'}>Add Book </Link> </li> 
+        <li> <Link to = {'/books'}>Books</Link> </li>
+        <li> <Link to = {'/about'}>About</Link> </li>
+        </ul>
       </nav>
     </div>
   )

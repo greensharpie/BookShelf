@@ -3,12 +3,8 @@ import { BASE_URL } from '../globals'
 import axios from 'axios'
 import { useState, useEffect } from 'react'  
 import Book from '../components/Book'
-// import { useParams } from 'react-router-dom'
 
-
-const Books = () => {
-
-  // const { id } = useParams()
+  const Books = () => {
 
   const [book, setBooks] = useState()
 
@@ -23,14 +19,13 @@ const Books = () => {
       }
     }
     showBook()
-    console.log(book)
     }, [])
 
 
   return (
     <><div className='booksContainer'>All Books</div><ul>
       {book && book.map((book, i) => (
-        <div className='book' key= {i}>
+        <div className='bookSomething' key= {i}>
           <Book book= {book} />
         </div>
       ))}

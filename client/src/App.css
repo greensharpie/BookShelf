@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,92 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px
+}
+
+/* a {
+  display: block;
+  padding: 8px;
+  background-color: #151414;
+  color: white;
+}
+li{
+  display: inline;
+  float: left;
+  
+}
+ul{
+  background-color: #dddddd;
+} */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+li:last-child {
+  border-right: none;
+}
+.active {
+  background-color: #2e745a;
+}
+
+.bookContainer{
+  /* display: inline-flex; */
+  align-items: center;
+  justify-content: center
+}
+
+img {
+  max-width: 100%;
+  padding-left: 100px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.bookImage {
+  flex-basis: 10%;
+  align-items: center;
+  
+}
+
+.bookText {
+  font-size: 20px;
+  padding-left: 100px;
+}
+
+.bookSomething {
+  display: inline-flex;
+  /* justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  align-self: flex-start; */
 }
