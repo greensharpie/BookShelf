@@ -23,7 +23,7 @@ import Book from '../components/Book'
 
 
   return (
-    <><div className='booksContainer'>All Books</div><ul>
+    <><div className='booksContainer'></div><ul>
       {book && book.map((book, i) => (
         <div className='bookSomething' key= {i}>
           <Book book= {book} />

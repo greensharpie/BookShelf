@@ -69,3 +69,25 @@ img {
   display: inline-flex;
 
 }
+
+  button.allBooks{
+padding: 20px 70px 20px 70px ;
+border:0.1em solid #000000;
+font-family:'Roboto',sans-serif;
+font-weight:300;
+color:#000000;
+text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+background-color:#65d3a7;
+transition: all 0.15s;
+}
+button.allBooks:hover{
+text-shadow: 0 0 2em rgba(255,255,255,1);
+color:#bbcb9f;
+border-color:#FFFFFF;
+}
+
+.homeContainer {
+
+ padding-left: 800px;
+ padding-top: 100px;
+}
