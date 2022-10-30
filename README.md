@@ -18,6 +18,11 @@
 
 <br/>
 
+![Home Page](client/photos/home.png)
+<br/>
+
+![Books Page](client/photos/books.png)
+
 ---
 
 ### **_Technologies_**
@@ -43,7 +48,7 @@
 - [x] Be written using the languages and frameworks learned in this course so far
 - [x] Not be written using any other languages or frameworks not covered in this course so far (TypeScript, Sass, jQuery, UI Frameworks, etc.)
 - [x] Have a separate directory for the frontend (client) and have your backend within the main repository.
-- [] Include a beautiful, professional README.md (use markdown)
+- [x] Include a beautiful, professional README.md (use markdown)
 - [x] Your README should have your name, links to socials, a detailed description of your project, technologies used, a getting started section (with links to your deployed site and Trello), screenshots of your final product (no more than 2-3), future updates, and credits.
 - [x] Utilize flexbox or grid (or both)
 - [] Include a minimum of 2 Mongoose Schemas (models)
