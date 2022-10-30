@@ -4,7 +4,7 @@
 
 ### By: Kevin Blanco
 
-#### [Trello Board](https://trello.com/b/2HRFuiyR/mcbroken) | [GitHub](https://github.com/greensharpie)| [Repo Link](https://github.com/greensharpie/BookShelf) | [Heroku](https://bookshelf-crud.herokuapp.com/)
+#### [Trello Board](https://trello.com/b/FMWy77pS/bookshelf-crud-app) | [GitHub](https://github.com/greensharpie)| [Repo Link](https://github.com/greensharpie/BookShelf) | [Heroku](https://bookshelf-crud.herokuapp.com/)
 
 ---
 
@@ -50,11 +50,11 @@
 - [x] Utilize flexbox or grid (or both)
 - [] Include a minimum of 2 Mongoose Schemas (models)
 - [x] Have Full CRUD (CREATE, READ, UPDATE, DELETE) operations
-- [] Display data from each model on the frontend (unless given an exemption on one by an Instructor)
+- [x] Display data from each model on the frontend (unless given an exemption on one by an Instructor)
 - [x] Must be able to navigate between different pages (React Router)
 - [] Have at least 40 meaningful git commits. You should be committing your changes every time you build a new feature.
 - [x] Your code should be properly indented, spaced, and within code blocks. DO NOT leave in commented out code that was left unused (bad practice). Comments should be in your code to describe what your functions are doing.
-- [] Be deployed on Heroku
+- [x] Be deployed on Heroku
 
 ---
 
