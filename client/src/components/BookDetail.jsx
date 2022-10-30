@@ -7,16 +7,20 @@ import { BASE_URL } from '../globals'
 
 const BookDetail = () => {
 
-  const { id } = useParams()
-  const [bookDetail, setBookDetails] = useState()
+  const [input, setInputs] = useState({})
+  const [checked, setChecked] = useState(false)
+
+  const id = useParams().id
+  // const [bookDetail, setBookDetails] = useState()
 
   useEffect(() => {
 
     const getBookId = async () => {
       try{
-        const res = await axios.get(`${BASE_URL}/books/${id}`)
-        setBookDetails(res.data)
-        console.log('detail res', res)
+        await axios.get(`${BASE_URL}/books/${id}`)
+        .then((res) => res.data)
+        .then((data) => setInputs(data.book))
+        // console.log('detail res', res)
       }catch (error) {
         console.log(error)
       }
@@ -24,10 +28,23 @@ const BookDetail = () => {
     getBookId()
   }, [id])
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+  }
+
+  const handleChange = (e) => {
+    setInputs((prevState) => ({
+      ...prevState,
+      [e.target.id]: e.target.value
+    }))
+    console.log('test three', e)
+  }
+  console.log('inputs', input)
+
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      {input && <form onSubmit={handleSubmit}>
         <label htmlFor='name'>Name: </label>
         <input 
         id = 'name'
@@ -79,7 +96,7 @@ const BookDetail = () => {
         <br></br>
         <button type='submit'>Update Book</button>
         <br></br>
-      </form>
+      </form>}
     </div>
   )
 }
