@@ -1,8 +1,13 @@
-import React from 'react'
+
 
 const About = () => {
   return (
-    <div>This is About</div>
+    <div className="aboutContainer">
+      <div>
+        <h2>Book Shelf</h2>
+        <p>This CRUD app will help you keep track of your books.</p>
+      </div>
+    </div>
   )
 }
 

@@ -58,7 +58,7 @@ const BookDetail = () => {
 
 
   return (
-    <div>
+    <div className='formContainer'>
       {input && <form onSubmit={handleSubmit}>
         <label htmlFor='name'>Name: </label>
         <input 

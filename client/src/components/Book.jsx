@@ -13,7 +13,7 @@ const Book = (props) => {
     }
   }
   return (
-    <div>
+    <div className='bookContainer'>
       <img src={image} alt={name} />
       <article>By {author} </article>
       <h3>{name}</h3>
