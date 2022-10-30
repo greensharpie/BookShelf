@@ -84,6 +84,7 @@ button.allBooks:hover{
 text-shadow: 0 0 2em rgba(255,255,255,1);
 color:#bbcb9f;
 border-color:#FFFFFF;
+background-color: #111;
 }
 
 .homeContainer {
