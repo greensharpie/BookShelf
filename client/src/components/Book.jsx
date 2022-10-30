@@ -8,7 +8,6 @@ const Book = (props) => {
   const deleteBook = async () => {
     try{
       await axios.delete(`${BASE_URL}/books/${_id}`)
-      // .then(res => res.data)
     } catch (error){
       console.log(error)
     }
