@@ -1,8 +1,12 @@
-import React from 'react'
+import { Link } from "react-router-dom"
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <Link to={'/books'}>
+      <button className="allBooks">View All Books</button>
+      </Link>
+    </div>
   )
 }
 
