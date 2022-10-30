@@ -30,8 +30,8 @@ const Books = () => {
   return (
     <><div>All Books</div><ul>
       {book && book.map((book, i) => (
-        <div key={i}>
-          <Book book={book} />
+        <div className='book' key= {i}>
+          <Book book= {book} />
         </div>
       ))}
     </ul></>
