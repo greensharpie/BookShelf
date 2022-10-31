@@ -22,6 +22,9 @@
 <br/>
 
 ![Books Page](client/photos/books.png)
+<br/>
+
+![Form Page](client/photos/form.png)
 
 ---
 
@@ -51,7 +54,7 @@
 - [x] Include a beautiful, professional README.md (use markdown)
 - [x] Your README should have your name, links to socials, a detailed description of your project, technologies used, a getting started section (with links to your deployed site and Trello), screenshots of your final product (no more than 2-3), future updates, and credits.
 - [x] Utilize flexbox or grid (or both)
-- [] Include a minimum of 2 Mongoose Schemas (models)
+- [x] Include a minimum of 2 Mongoose Schemas (models)
 - [x] Have Full CRUD (CREATE, READ, UPDATE, DELETE) operations
 - [x] Display data from each model on the frontend (unless given an exemption on one by an Instructor)
 - [x] Must be able to navigate between different pages (React Router)
