@@ -149,3 +149,8 @@ form {
   align-items: center;
   padding-left: 650px;
 }
+
+.aboutDiv {
+  text-align: center;
+  font-size: 30px;
+}
