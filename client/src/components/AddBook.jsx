@@ -99,7 +99,7 @@ const AddBook = () => {
         />
         <br></br>
         <div className='addBookDiv'>
-        <button type='submit'>Add Book</button>
+        <button className='addBook' type='submit'>Add Book</button>
         <br></br>
         </div>
       </form>
