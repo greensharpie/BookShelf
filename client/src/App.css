@@ -73,22 +73,23 @@ img {
   button.allBooks{
 padding: 20px 70px 20px 70px ;
 border:0.1em solid #000000;
-font-family:'Roboto',sans-serif;
+font-size: 40px;
+/* font-family:'Roboto',sans-serif; */
 font-weight:300;
-color:#000000;
+color:#ffffff;
 text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
 background-color:#1abc9c;
 transition: all 0.15s;
 }
 button.allBooks:hover{
 text-shadow: 0 0 2em rgba(255,255,255,1);
-color:#bbcb9f;
+color:#1abc9c;
 border-color:#FFFFFF;
 background-color: #111;
 }
 
 .homeContainer {
-padding-left: 800px;
+padding-left: 600px;
 padding-top: 100px;
 }
 
