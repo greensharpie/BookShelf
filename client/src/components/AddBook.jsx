@@ -76,7 +76,7 @@ const AddBook = () => {
         <label htmlFor='rating'>Rating: </label>
         <input 
         id= 'rating'
-        type= 'number' className='ratingInput'
+        type= 'number' className='ratingInput' min='1' max='10'
         value = {input.rating}
         onChange= {handleChange}
         />
