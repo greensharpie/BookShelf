@@ -55,7 +55,7 @@
 - [x] Have Full CRUD (CREATE, READ, UPDATE, DELETE) operations
 - [x] Display data from each model on the frontend (unless given an exemption on one by an Instructor)
 - [x] Must be able to navigate between different pages (React Router)
-- [] Have at least 40 meaningful git commits. You should be committing your changes every time you build a new feature.
+- [x] Have at least 40 meaningful git commits. You should be committing your changes every time you build a new feature.
 - [x] Your code should be properly indented, spaced, and within code blocks. DO NOT leave in commented out code that was left unused (bad practice). Comments should be in your code to describe what your functions are doing.
 - [x] Be deployed on Heroku
 
