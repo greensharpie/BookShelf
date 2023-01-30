@@ -6,6 +6,7 @@ const Book = require('../models/book')
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async () => {
+  Book.collection.drop()
   const books = [
     {
       name: `Harry Potter and the Sorcerer's Stone`,
